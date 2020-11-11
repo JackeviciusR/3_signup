@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up</title></head>
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- components -->
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="./css/custom.css">
 </head>
+
+
 <body>
-    <main>
-        <div>
-            <h1>Sign up</h1>
-            <footer>
-                <a href="http://">Privacy policy</a>
+    <div class="background"></div>
+    <main class="container">
+        <div class="left-column">
+            <h1 class="page-title">Sign up</h1>
+            <footer class="bottom-links">
+                <a class="link" href="http://">Privacy policy</a>
                 <!-- &amp; - enity of & -->
-                <span>&amp;</span> 
-                <a href="http://">terms of service</a>
+                <span class="text">&amp;</span> 
+                <a class="link" href="http://">terms of service</a>
             </footer>
         </div>
-        <div>
-            <div>x</div>
+        <div class="right-column">
+            <div class="close">x</div>
             <!-- jei norime kreiptis i php faila
             <form action=""></form> -->
-            <form>
-                <div>
-                    <label for="username">User name</label>
-                    <input id="username" type="text" placeholder="Enter your">
+            <form class="form">
+                <div class="form-row">
+                    <label class="label" for="username">User name</label>
+                    <input class="input" id="username" type="text" placeholder="Enter your">
                 </div>
                     
-                <div>
-                    <label for="email">E-mail</label>
-                    <input id="email" type="e-mail" placeholder="e-mail..." >
+                <div class="form-row">
+                    <label class="label" for="email">E-mail</label>
+                    <input class="input" id="email" type="e-mail" placeholder="e-mail..." >
                 </div>
                     
-                <div>
-                    <label for="pass">Password</label>
-                    <input id="pass" type="password" placeholder="password"  >
+                <div class="form-row">
+                    <label class="label" for="pass">Password</label>
+                    <input class="input" id="pass" type="password" placeholder="password"  >
                 </div>
                     
-                <div>
-                    <label for="repass">Repeat password</label>
-                    <input id="repass" type="password" placeholder="repeat password" >
+                <div class="form-row">
+                    <label class="label" for="repass">Repeat password</label>
+                    <input class="input" id="repass" type="password" placeholder="repeat password" >
                 </div>
                     
-                <div>
+                <div class="form-row ">
                     <!-- galima rasyti ir: button></button> -->
                     <!-- <input type="Submit", value="Get started"> -->
                     <!-- reload'ins puslapi paspaudus, reikia, kad neatnaujintu -->
-                    <div>Get started</div>
-                    <span>or</span>
-                    <a href="#">Sign in</a>
+                    <div class="btn">Get started</div>
+                    <span class="text">or</span>
+                    <a class="link" href="#">Sign in</a>
                 </div>
             </form>
         </div>

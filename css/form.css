@@ -1,0 +1,73 @@
+/* FORM */
+
+
+.form {
+    display: inline-block;
+    width: 100%;
+
+}
+    .form-row {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+        /* neturi buti tarpo po : */
+        .form-row:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .label {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 5px;
+            font-size: 13px;
+            line-height: 15px;
+            text-transform: uppercase;
+        }
+
+        .input {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            line-height: 25px;
+            border: none;
+            border-bottom: 1px solid #777;            
+        }
+
+        /* jei elementas sufokusuotas, t.y. band regdaguoti input turini */
+        .input:focus {
+            /* outline veikia kaip seselis, todel dydziu neisdarko */
+            outline: 3px solid #0069ba;
+            
+        }
+
+        .form-row > .text {
+            display: inline-block;
+            padding: 10px;
+            line-height: 20px;
+            font-size: 18px;
+        }
+
+        .form-row > .link {
+            display: inline-block;
+            padding: 10px;
+            line-height: 20px;
+            font-size: 18px;
+            color: #0069ba;
+
+        }
+
+            /* hover - Force state */
+            /* Force state priskiriamas per ":" */
+            /* su inspect web'e uzeiname ant Sin in ir spaudziam kairi mygtuka,
+            tada ties Elements pasizymi:
+            <a class="link" href="#">Sign in</a>
+            spaudziam desni ir pasirodo lentele,
+            uzeinam ant Force state, kur atsiradusi papildoma lentele
+            parodo ka dar galima daryti! */
+            .form-row > .link:hover {
+                /* pasikeicia spalva uzejus kursoriumi */
+                color: red;
+            }
+

@@ -1,0 +1,100 @@
+
+body{
+    background-color: #4bb3c9;
+}
+
+.background{
+    /* height nenaudojamas procentais */
+    /* vh - view hight, perskaiciuoja i pixel'ius */
+    height: 100vh; 
+    background-image: url(../img/kalnas.jpg);
+    background-repeat: no-repeats;
+    background-size: cover;
+    background-position: center;
+    filter:blur(20px);
+}
+
+    .container {
+        display: inline-block;
+        width: 800px;
+        position: absolute;
+        /* top: calc((100% - 460px) / 2);
+        left: calc((100% - 800px) / 2); */
+
+        /* vietoj calc ilgesniam laikui */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+        .left-column {
+            display: inline-block;
+            width: 40%;
+            /* float: left; */
+            padding: 40px;
+            padding-bottom: 20px;
+            /* margin-top: 20px; */
+            background-color: #0069ba;
+            background-image: url(../img/kalnas.jpg);
+            /* background-repeat nesimatys, todel uzkomentuojame */
+            /* background-repeat: no-repeats; */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            position: absolute;
+            top: 30px;
+            bottom: 30px;
+        }
+            .page-title {
+                display: inline-block;
+                width: 100%;
+                font-weight: normal;
+            }
+
+            .bottom-links {
+                display: inline-block;
+                width: 100%;
+                position: absolute;
+                bottom: 20px;
+                left: 40px;
+                right:40px;
+            }
+                .bottom-links > .link {
+                    color: #fff;
+                }
+
+                .bottom-links > .text {
+                }
+
+        .right-column {
+            display: inline-block;
+            width: 60%;
+            float: right;
+            padding: 60px;
+            background-color: #fff;
+            /* nurodome atskaitos taska: */
+            position: relative;
+
+
+        }
+            .close {
+                display: inline-block;
+                width: 60px;
+                line-height: 60px;
+                text-align: center;
+                font-size: 30px;
+                /* background-color: red; */
+                /* nustumiame "X" i kampa */
+                /* sudetinga suderinti */
+                /* float: right;
+                margin-top: 60px;
+                margin-right: -60px; */
+                /* --------------------------- */
+                /* bandom sulygiuoti */
+                /* visi gime elementai yra statics:
+                position: static; */
+                position: absolute;
+                top:0;
+                right:0;
+
+            }
