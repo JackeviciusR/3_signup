@@ -2,12 +2,30 @@
 body{
     background-color: #4bb3c9;
 }
+
+.background{
+    /* height nenaudojamas procentais */
+    /* vh - view hight, perskaiciuoja i pixel'ius */
+    height: 100vh; 
+    background-image: url(../img/kalnas.jpg);
+    background-repeat: no-repeats;
+    background-size: cover;
+    background-position: center;
+    filter:blur(20px);
+}
+
     .container {
         display: inline-block;
         width: 800px;
-        margin-top: 100px;
-        margin-left: calc((100% - 800px) / 2);
-        position: relative;
+        position: absolute;
+        /* top: calc((100% - 460px) / 2);
+        left: calc((100% - 800px) / 2); */
+
+        /* vietoj calc ilgesniam laikui */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
     }
         .left-column {
             display: inline-block;
@@ -17,15 +35,20 @@ body{
             padding-bottom: 20px;
             /* margin-top: 20px; */
             background-color: #0069ba;
+            background-image: url(../img/kalnas.jpg);
+            /* background-repeat nesimatys, todel uzkomentuojame */
+            /* background-repeat: no-repeats; */
+            background-size: cover;
+            background-position: center;
             color: #fff;
             position: absolute;
             top: 30px;
             bottom: 30px;
-
         }
             .page-title {
                 display: inline-block;
                 width: 100%;
+                font-weight: normal;
             }
 
             .bottom-links {
